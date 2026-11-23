@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "author": "Grupo 7 IoT - Politecnico Grancolombiano",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 120, "left": 0, "attrs": {} },
+    { "type": "wokwi-led", "id": "verde", "top": -40, "left": 180, "attrs": { "color": "green", "label": "VERDE" } },
+    { "type": "wokwi-led", "id": "rojo", "top": -40, "left": 260, "attrs": { "color": "red", "label": "ROJO" } },
+    { "type": "wokwi-resistor", "id": "r_verde", "top": 40, "left": 160, "rotate": 90, "attrs": { "value": "220" } },
+    { "type": "wokwi-resistor", "id": "r_rojo", "top": 40, "left": 240, "rotate": 90, "attrs": { "value": "220" } }
+  ],
+  "connections": [
+    [ "uno:8", "r_verde:2", "green", [] ],
+    [ "r_verde:1", "verde:A", "green", [] ],
+    [ "verde:C", "uno:GND.1", "black", [] ],
+
+    [ "uno:9", "r_rojo:2", "red", [] ],
+    [ "r_rojo:1", "rojo:A", "red", [] ],
+    [ "rojo:C", "uno:GND.1", "black", [] ]
+  ],
+  "serialMonitor": { "display": "always", "newline": "lf" },
+  "dependencies": {}
+}
