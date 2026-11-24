@@ -10,6 +10,5 @@ Entregas del módulo **Internet de las Cosas**. Docente: Jesús Antonio Figueroa
 ## Integrantes
 
 - Matías Betancurt Malagón
-- Nataly Arcila Zuluaga
 - David Marín Gómez
 - Ricardo Arnulfo Forero
